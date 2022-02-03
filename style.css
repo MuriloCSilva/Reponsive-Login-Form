@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+}
+
+body {
+    background-color: #191816;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "main aside";
+    grid-template-columns: 55% 45%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #afb6c2;
+    font-size: 13px;
+}
+
+main {
+    grid-area: main;
+    padding: 10px;
+}
+aside {
+    grid-area: aside;
+}
+
+.page-title {
+    margin-bottom: 10%;
+}
+
+img.page-title {
+    max-width: 100px;
+    width: 100%;
+}
+
+a.title-form {
+    font-size: 27px;
+    padding: 5px;
+}
+
+div.container-form-content {
+    background-color: #24221f;
+    padding: 50px 40px 50px 40px;
+    border-radius: 5px;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.aside-img {
+    max-width: 630px;
+    max-height: 620px;
+    height: 100%;
+    width: 100%;
+}
+
+.button-entrar {
+    background-color: #ffc632;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #24221f; 
+    border-radius: 5px;
+}
+
+.button-entrar:hover {
+    background-color: #c49725;
+    cursor: pointer;
+}
+
+.input-boxes-mark {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.input-boxes {
+    justify-content: space-between;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    padding: 10px 60px 10px 5px;
+    border: 1px solid #afb6c2;
+    border-radius: 5px;
+}
+
+.input-box:focus-within {
+    border: 2px solid #ffc632;
+}
+
+input.input-box-holder {
+    width: 100%;
+    padding: 0px 0px 0px 5px;
+    background-color: rgba(178, 34, 34, 0);
+    color: #afb6c2;
+    border: 0;
+    outline: 0;
+}
+
+#input-box-email:focus-within #img-input-box-email {
+    content: url(./images/mail-focus.svg);
+}
+
+#input-box-password:focus-within #img-input-box-password {
+    content: url(./images/lock-focus.svg);
+}
+
+.container-flex-box-password-checkbox {
+    display: flex;
+}
+
+a.link-anchor {
+    color: #ffc632;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a.link-anchor:hover {
+    text-decoration: underline;
+    color: #e9b42f;
+}
+
+input.check-box-mark {
+    background-color: rgba(178, 34, 34, 0);
+}
+
+input.check-box-mark:focus-within {
+    background-color: #ffc632;
+}
+
+input[type=checkbox] {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #afb6c2;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(178, 34, 34, 0);
+}
+
+@media (max-width: 900px) {
+
+    body {
+        grid-template-columns: 100% 0%;
+    }
+}
